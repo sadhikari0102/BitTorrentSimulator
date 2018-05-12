@@ -1,7 +1,8 @@
 # BitTorrentSimulator
 A peer-to-peer file transfer application
 
-This application is designed to simulate the behaviour of peer-to-peer file transfer protocol, similar to the one used by well-known file sharing application, Bit Torrent. The application simulates multiple peer processes running in parallel, by launching multiple threads, one representing each process. For testing purposes, the threads run in the same system using localhost address, although the same behaviour can be achieved by running different threads in different systems running the same programs. PeerInfo.cfg is the configuration file which holds the configurations for all the peers to be supported by the application. The information is in the format [peer ID] [host name] [listening port] [has file or not]
+This application is designed to simulate the behaviour of peer-to-peer file transfer protocol, similar to the one used by well-known file sharing application, Bit Torrent. The application simulates multiple peer processes running in parallel, by launching multiple threads, one representing each process. For testing purposes, the threads run in the same system using localhost address, although the same behaviour can be achieved by running different threads in different systems running the same programs. PeerInfo.cfg is the configuration file which holds the configurations for all the peers to be supported by the application. The 
+information is in the format : [peer ID] [host name] [listening port] [has file or not]
 In the beginning, before the peers are started, atleast one of the peer should already have a file to be shared. It should be placed in the corresponding peer folder named as 'peer_peerId'.
 Once all the peers are started, the file sharing starts, and at the end of it, file is replicated in all the peer's folders.
 Additional configuration related to application functionalities are stored in common.cfg. Below are the test configurations:
